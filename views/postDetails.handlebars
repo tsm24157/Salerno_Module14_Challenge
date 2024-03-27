@@ -1,0 +1,19 @@
+{{!-- display post details --}}
+<div class="post-details">
+  <div class="post-content">
+    {{> post post=post }}
+  </div>
+
+  {{#if post.comments}}
+    <div class="comment-section">
+      <h3>Comments</h3>
+      {{#each post.comments}}
+        {{> comment comment=this }}
+      {{/each}}
+    </div>
+  {{/if}}
+
+  <div class="comment-form-section">
+    {{> commentForm }}
+  </div>
+</div>

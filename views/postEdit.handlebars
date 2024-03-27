@@ -1,0 +1,27 @@
+{{!-- edit post --}}
+<section>
+  <div class="post">
+    <div class="title">
+      <h2>
+        <div class="post-header">
+          <p class="post-title">Edit post</p>
+        </div>
+      </h2>
+      <form class="edit-form" data-id="{{post.id}}">
+        <div>
+          <label for="post-title">Title</label>
+          <input type="text" id="post-title" name="post-title"  value="{{post.title}}" />
+        </div>
+        <div>
+          <label for="post-body">Post content</label>
+          <textarea name="post-body" id="post-body" class="form-input post-area">{{post.body}}</textarea>
+        </div>
+        <div>
+          <button type="submit" class="new-post-btn">Update post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="/js/postEdit.js"></script>

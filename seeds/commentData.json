@@ -1,0 +1,22 @@
+[
+    {
+        "body": "I love this blog",
+        "userId": 1,
+        "postId": 1
+    },
+    {
+        "body": "I miss my cats",
+        "userId": 2,
+        "postId": 1
+    },
+    {
+        "body": "I miss my dog",
+        "userId": 3,
+        "postId": 1
+    },
+    {
+        "body": "Hows the weather?",
+        "userId": 3,
+        "postId": 2
+    }
+]

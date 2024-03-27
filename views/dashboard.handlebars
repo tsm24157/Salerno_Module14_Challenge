@@ -1,0 +1,19 @@
+{{#if posts.length}}
+
+<div class="post-list">
+  <h2>Previous posts:</h2>
+  {{#each posts as |post|}}
+  {{> dashboardPostDetails post=post }}
+  {{/each}}
+</div>
+{{/if}}
+
+<div class="dash-btn">
+  <button id="newPostButton" type="button" class="new-post-btn">Create a new post</button>
+</div>
+
+<script>
+  document.getElementById('newPostButton').addEventListener('click', function () {
+    window.location.href = '/dashboard/postCreate';
+  });
+</script>

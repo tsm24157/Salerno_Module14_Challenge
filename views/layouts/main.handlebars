@@ -1,0 +1,40 @@
+{{!-- display banner, nav links --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/reset.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Challenge 14 Blog</title>
+</head>
+
+<body>
+  <div clas="container">
+    <header>
+      <div class="banner">
+        <h1>
+          <a href="/" class="banner-link">Challenge 14 Blog</a>
+        </h1>
+      </div>
+      <div class="nav">
+        <a href="/dashboard" class="dash-link">  Home  </a>
+        {{#if logged_in}}
+        <a href="/login" class="dash-link" id="logout">  Logout  </a>
+        {{else}}
+        <a href="/login" class="dash-link">  Login  </a>
+        {{/if}}
+      </div>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+  </div>
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
